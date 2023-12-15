@@ -183,7 +183,8 @@ input[type="text"] {
 .main__container-table_title {
   display: flex;
   justify-content: space-between;
-  margin-right: 44px;
+  margin-right: 82px;
+  margin-top: 40px;
   color: #b5b7c0;
 }
 .main__container-table_data {
@@ -194,64 +195,67 @@ input[type="text"] {
 
 .main__container-slider {
   display: flex;
-  width: 271px;
-  height: 24px;
+  justify-content: space-between;
+  align-items: center;
 }
 h4 {
   color: #b5b7c0;
   font-weight: 500;
   letter-spacing: -0.14px;
 }
-.swiper {
-  width: 271px;
-  height: 24px;
-  color: #404b52;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: -0.12px;
+
+.slider {
+  display: flex;
+  margin-right: 40px;
+  gap: 12px;
 }
-.swiper-slide {
+.slder__item {
   display: inline-flex;
   padding: 6px 9px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 25px;
-  height: 24px;
   border-radius: 4px;
   border: 1px solid #eee;
   background: #f5f5f5;
 }
-.swiper-button-prev,
-.swiper-button-next {
-  color: #404b52;
+.slder__item:hover {
+  display: inline-flex;
+  padding: 6px 9px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #5932ea;
+
+  background: #5932ea;
 }
 
-/* .line {
-  position: absolute;
-  left: 353px;
-  top: 255px;
-  width: 968px;
-  height: 1px;
-  background-color: #EEE;
-} */
-/* .swiper-container {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #f2f2f2;
+.button {
+  display: flex;
+  width: 80px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-
-.swiper-slide {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #ccc;
-  margin: 0 10px;
-  display: inline-block;
+.button-text-green {
+  color: #008767;
+  letter-spacing: -0.14px;
 }
-
-.swiper-slide.active {
-  background-color: #00f; /* Змініть колір на активній сторінці тут */
-} */
+.button-text-red {
+  color: #df0404;
+  letter-spacing: -0.14px;
+}
+.green {
+  border-radius: 4px;
+  border: 1px solid #00b087;
+  background: rgba(22, 192, 152, 0.38);
+}
+.red {
+  border-radius: 4px;
+  border: 1px solid #df0404;
+  background: #ffc5c5;
+}
