@@ -17,6 +17,7 @@
   width: 1440px;
   height: 1198px;
   background: #fafbff;
+  margin: 0 auto;
 }
 
 .aside {
@@ -53,7 +54,6 @@ nav {
   overflow: hidden;
 }
 
-
 ul {
   list-style-type: none;
   padding: 40px;
@@ -62,9 +62,12 @@ ul {
 }
 
 li {
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
 }
-li a img {
+.aside__nav-arrow {
+  margin-left: auto;
+}
+.aside__nav-images {
   margin-right: 14px;
 }
 
@@ -73,6 +76,8 @@ li a {
   text-decoration: none;
   color: #9197b3;
   align-items: center;
+  width: 250px;
+  height: 46px;
 }
 
 /* Стилізація посилань a при наведенні курсора */
@@ -84,6 +89,34 @@ li a:hover {
   width: 250px;
   margin-bottom: 40px; /* Змінити колір тексту при наведенні */
 }
+
+
+
+.svg {
+  fill: none;
+  /* stroke: #9197B3; */
+}
+
+/* Змінений колір при наведенні */
+.svg:hover {
+  fill: none;
+  stroke: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main {
   width: 968px;
   height: 812px;
