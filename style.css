@@ -74,11 +74,11 @@ ul:first-child {
 li {
   margin-bottom: 29px;
 }
-.aside__nav-arrow {
-  margin-left: auto;
-}
 .aside__nav-images {
   margin-right: 14px;
+}
+.aside__nav-arrow {
+  margin-left: auto;
 }
 li a {
   display: flex;
