@@ -78,6 +78,8 @@ li a img {
 }
 li a {
   display: flex;
+  width: 250px;
+  height: 46px;
   text-decoration: none;
   color: #9197b3;
   align-items: center;
@@ -109,7 +111,6 @@ li a:hover {
   letter-spacing: 0.12px;
 }
 
-// ------------------
 
 .main {
   width: 968px;
@@ -189,7 +190,7 @@ th:last-child {
   top: 255px;
   width: 968px;
   height: 1px;
-  background-color: #EEE;
+  background-color: #eee;
 }
 td {
   border-bottom: 1px solid #eee;
