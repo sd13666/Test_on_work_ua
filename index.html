@@ -107,15 +107,11 @@
             </li>
             <li>
               <a href="#">
-                <img
-                  class="aside__nav-images"
-                  src="./Images/asideImg/message-question.svg"
+                <img class="aside__nav-images" src="./Images/asideImg/message-question.svg"
                   alt="message-question"
                 />
                 <span class="aside__nav-item">Help</span>
-                <img
-                  class="aside__nav-arrow"
-                  src="./Images/asideImg/chevron-right.svg"
+                <img class="aside__nav-arrow" src="./Images/asideImg/chevron-right.svg"
                   alt="chevron-right"
                 />
               </a>
@@ -138,6 +134,7 @@
       <main class="main">
         <h1 class="main-meeting">Hello Evano 👋🏼,</h1>
         <div class="main__container">
+
           <div class="main__container-top">
             <div class="top-title">
               <h2>All Customers</h2>
@@ -150,111 +147,211 @@
           </div>
 
           <div class="main__container-table">
-            <div class="main__container-table_title">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div>Status</div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button green">
-                <span class="button-text-green">Active</span>
-              </div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button red">
-                <span class="button-text">Inactive</span>
-              </div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button red">
-                <span class="button-text">Inactive</span>
-              </div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button green">
-                <span class="button-text-green">Active</span>
-              </div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button green">
-                <span class="button-text-green">Active</span>
-              </div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button green">
-                <span class="button-text-green">Active</span>
-              </div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button green">
-                <span class="button-text-green">Active</span>
-              </div>
-            </div>
-            <div class="main__container-table_data">
-              <div>Customer Name</div>
-              <div>Company</div>
-              <div>Phone Number</div>
-              <div>Email</div>
-              <div>Country</div>
-              <div class="button red">
-                <span class="button-text">Inactive</span>
-              </div>
-            </div>
-            <div class="main__container-slider">
-              <h4>Showing data 1 to 8 of 256K entries</h4>
-              <div class="slider">
-                <div class="slder__item"><</div>
-                <div class="slder__item">1</div>
-                <div class="slder__item">2</div>
-                <div class="slder__item">3</div>
-                <div class="slder__item">4</div>
-                <div class="slder__item">...</div>
-                <div class="slder__item">40</div>
-                <div class="slder__item">></div>
-              </div>
-              
-            </div>
+                                
+                  <div class="table">                    
+                    <div class="row header">              
+                      <div class="cell">
+                        Customer Name
+                      </div>
+                      <div class="cell">
+                        Company
+                      </div>
+                      <div class="cell">
+                        Phone Number
+                      </div>
+                      <div class="cell">
+                        Email
+                      </div>
+                      <div class="cell">
+                        Country
+                      </div>
+                      <div class="cell status">
+                        Status
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Jane Cooper
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Microsoft
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (225) 555-0118
+                      </div>
+                      <div class="cell" data-title="Email">
+                        jane@microsoft.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        United States
+                      </div>
+                      <div class="button green" data-title="Status">
+                        <span class="button-text-green">Active</span>
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Floyd Miles
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Yahoo
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (205) 555-0100
+                      </div>
+                      <div class="cell" data-title="Email">
+                        floyd@yahoo.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        Kiribati
+                      </div>
+                      <div class="button red" data-title="Status">
+                        <span class="button-text-red">Inactive</span>
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Ronald Richards
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Adobe
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (302) 555-0107
+                      </div>
+                      <div class="cell" data-title="Email">
+                        ronald@adobe.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        Israel
+                      </div>
+                      <div class="button red" data-title="Status">
+                        <span class="button-text-red">Inactive</span>
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Marvin McKinney
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Tesla
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (252) 555-0126
+                      </div>
+                      <div class="cell" data-title="Email">
+                        marvin@tesla.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        Iran
+                      </div>
+                      <div class="button green" data-title="Status">
+                        <span class="button-text-green">Active</span>
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Jerome Bell
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Google
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (629) 555-0129
+                      </div>
+                      <div class="cell" data-title="Email">
+                        jerome@google.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        Réunion
+                      </div>
+                      <div class="button green" data-title="Status">
+                        <span class="button-text-green">Active</span>
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Kathryn Murphy
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Microsoft
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (406) 555-0120
+                      </div>
+                      <div class="cell" data-title="Email">
+                        kathryn@microsoft.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        Curaçao
+                      </div>
+                      <div class="button green" data-title="Status">
+                        <span class="button-text-green">Active</span>
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Jacob Jones
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Yahoo
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (208) 555-0112
+                      </div>
+                      <div class="cell" data-title="Email">
+                        jacob@yahoo.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        Brazil
+                      </div>
+                      <div class="button green" data-title="Status">
+                        <span class="button-text-green">Active</span>
+                      </div>                      
+                    </div>
+                    <div class="row ">              
+                      <div class="cell" data-title="Customer Name">
+                        Kristin Watson
+                      </div>
+                      <div class="cell" data-title="Company">
+                        Facebook
+                      </div>
+                      <div class="cell" data-title="Phone Number">
+                        (704) 555-0127
+                      </div>
+                      <div class="cell" data-title="Email">
+                        kristin@facebook.com
+                      </div>
+                      <div class="cell" data-title="Country">
+                        Åland Islands
+                      </div>
+                      <div class="button red" data-title="Status">
+                        <span class="button-text-red">Inactive</span>
+                      </div>                      
+                    </div>
+                  </div>
+
+                  <div class="main__container-slider">
+                    <h4>Showing data 1 to 8 of 256K entries</h4>
+                    <div class="slider">
+                      <div class="slder__item"><</div>
+                      <div class="slder__item">1</div>
+                      <div class="slder__item">2</div>
+                      <div class="slder__item">3</div>
+                      <div class="slder__item">4</div>
+                      <div class="slder__item">...</div>
+                      <div class="slder__item">40</div>
+                      <div class="slder__item">></div>
+                    </div>
+                    </div>  
+                  </div>
+          </div>       
+        </div>
+            
       </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
+
