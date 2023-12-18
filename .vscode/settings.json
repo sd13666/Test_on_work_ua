@@ -3,5 +3,6 @@
     "activityBar.background": "#18303E",
     "titleBar.activeBackground": "#214457",
     "titleBar.activeForeground": "#F8FBFC"
-  }
+  },
+  "liveServer.settings.port": 5501
 }

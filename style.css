@@ -22,6 +22,7 @@ html {
   max-width: 1440px;
   max-height: 1198px;
   background: #fafbff;
+  margin: 0 auto;
 }
 
 .aside {
@@ -72,12 +73,22 @@ ul:first-child {
 }
 li {
   margin-bottom: 29px;
+<<<<<<< HEAD
 }
 .aside__nav-arrow {
   margin-left: auto;
 }
+=======
+  width: 250px;
+  height: 46px;
+}
+>>>>>>> d7f2cc695b1efa35220af9d4533671851b8e6a48
 .aside__nav-images {
   margin-right: 14px;
+}
+.aside__nav-arrow {
+  margin-left: auto;
+  margin-right: 15px;
 }
 li a {
   display: flex;
@@ -114,6 +125,10 @@ li a:hover {
   letter-spacing: 0.12px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d7f2cc695b1efa35220af9d4533671851b8e6a48
 .main {
   width: 1110px;
   height: 100%;
@@ -130,7 +145,7 @@ li a:hover {
   max-width: 968px;
   margin-left: 47px;
   padding-left: 38px;
-  padding-right: 44px;
+  padding-right: 40px;
   flex-shrink: 0;
   background-color: #ffffff;
   border-radius: 30px;
@@ -139,12 +154,17 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
   margin-top: 90px;
+=======
+  margin-top: 51px;
+>>>>>>> d7f2cc695b1efa35220af9d4533671851b8e6a48
 }
 .top-title h2 {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.22px;
+  margin-top: 30px;
   margin-bottom: 7px;
 }
 .top-title h3 {
@@ -156,7 +176,12 @@ li a:hover {
   align-items: center;
   width: 216px;
   height: 38px;
+<<<<<<< HEAD
   margin-right: 53px;
+=======
+  margin-right: 30px;
+  margin-top: 30px;
+>>>>>>> d7f2cc695b1efa35220af9d4533671851b8e6a48
   border-radius: 10px;
   background: #f9fbff;
 }
@@ -170,6 +195,7 @@ input[type="text"] {
   letter-spacing: -0.12px;
 }
 
+<<<<<<< HEAD
 .main__container-table {
   display: flex;
   flex-direction: column;
@@ -183,6 +209,23 @@ input[type="text"] {
   display: flex;
   justify-content: space-between;
   margin-right: 44px;
+=======
+@media screen and (max-width: 580px) {
+  
+}
+
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  display: table;
+}
+
+.row {
+  display: table-row;
+}
+
+.row.header {
+>>>>>>> d7f2cc695b1efa35220af9d4533671851b8e6a48
   color: #b5b7c0;
 }
 .main__container-table_data {
@@ -201,6 +244,7 @@ h4 {
   font-weight: 500;
   letter-spacing: -0.14px;
 }
+<<<<<<< HEAD
 .swiper {
   width: 271px;
   height: 24px;
@@ -253,3 +297,110 @@ h4 {
 
 .swiper-slide.active {
   background-color: #00f; /* Змініть колір на активній сторінці тут */
+=======
+
+@media screen and (max-width: 580px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .table {
+    display: block;
+  }
+  .cell {
+    padding: 2px 16px;
+    display: block;
+  }
+
+  .row.cell {
+    margin-bottom: 40px;
+  }
+
+  .row.cell:before {
+    margin-bottom: 3px;
+    content: attr(data-title);
+    min-width: 98px;
+    line-height: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #969696;
+    display: block;
+  }
+}
+.status{
+  padding-left: 10px;
+}
+.cell {
+  display: table-cell;
+  padding-top: 40px;
+}
+
+.main__container-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 41px;
+}
+h4 {
+  color: #b5b7c0;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+}
+
+.slider {
+  display: flex;
+  gap: 12px;
+}
+.slder__item {
+  display: inline-flex;
+  padding: 6px 9px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+}
+.slder__item:hover {
+  display: inline-flex;
+  padding: 6px 9px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #5932ea;
+
+  background: #5932ea;
+}
+
+.button {
+  display: flex;
+  width: 80px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.button-text-green {
+  color: #008767;
+  letter-spacing: -0.14px;
+}
+.button-text-red {
+  color: #DF0404;
+  letter-spacing: -0.14px;
+}
+.green {
+  border-radius: 4px;
+  border: 1px solid #00b087;
+  background: rgba(22, 192, 152, 0.38);
+}
+.red {
+  border-radius: 4px;
+  border: 1px solid #df0404;
+  background: #ffc5c5;
+}
+
+>>>>>>> d7f2cc695b1efa35220af9d4533671851b8e6a48
