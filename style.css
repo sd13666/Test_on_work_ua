@@ -11,18 +11,27 @@
   font-weight: 500;
   line-height: normal;
 }
-
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
 .wrapper {
-  display: flex;
-  width: 1440px;
-  height: 1198px;
-  background: #fafbff;
   margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+  max-height: 1198px;
+  background: #fafbff;
 }
 
 .aside {
+  display: flex;
+  flex-direction: column;
   width: 306px;
-  height: 1198px;
+  min-height: 100%;
+  background: #fff;
+  padding: 0 28px;
+  padding-bottom: 50px;
 }
 .aside__header {
   width: 217px;
@@ -30,8 +39,8 @@
   display: flex;
   align-items: center;
   margin-top: 37px;
-  margin-left: 28px;
-  /* margin-bottom: 66px; */
+  margin-bottom: 66px;
+  border: 2px;
 }
 .aside__header-title {
   color: #000;
@@ -48,21 +57,21 @@
   margin-top: 10px;
 }
 
-nav {
-  background: #fff;
+.aside__nav {
+  margin-left: 19px;
   width: 306px;
-  overflow: hidden;
 }
-
 ul {
   list-style-type: none;
-  padding: 40px;
+  padding: 40px 0;
   color: #fff;
   letter-spacing: -0.14px;
 }
-
+ul:first-child {
+  padding: 0;
+}
 li {
-  margin-bottom: 40px;
+  margin-bottom: 29px;
 }
 .aside__nav-arrow {
   margin-left: auto;
@@ -70,7 +79,6 @@ li {
 .aside__nav-images {
   margin-right: 14px;
 }
-
 li a {
   display: flex;
   text-decoration: none;
@@ -79,47 +87,169 @@ li a {
   width: 250px;
   height: 46px;
 }
-
-/* Стилізація посилань a при наведенні курсора */
 li a:hover {
-  text-decoration: none; /* Додати підкреслення при наведенні */
+  text-decoration: none;
   color: #fff;
   border-radius: 8px;
   background: #5932ea;
   width: 250px;
-  margin-bottom: 40px; /* Змінити колір тексту при наведенні */
+  height: 46px;
 }
 
-
-
-.svg {
-  fill: none;
-  /* stroke: #9197B3; */
+.aside__footer {
+  height: auto;
+  display: inline-flex;
+  margin-top: 597px;
+  padding-bottom: 76px;
+  color: #757575;
+  letter-spacing: 0.14px;
 }
-
-/* Змінений колір при наведенні */
-.svg:hover {
-  fill: none;
-  stroke: white;
+.aside__footer-name {
+  margin-left: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.aside__footer-name span {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+}
 
 .main {
-  width: 968px;
-  height: 812px;
+  width: 1110px;
+  height: 100%;
   fill: #fff;
   filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
 }
+.main-meeting {
+  color: #000;
+  font-size: 24px;
+  margin-top: 41px;
+  padding-left: 47px;
+}
+.main__container {
+  max-width: 968px;
+  margin-left: 47px;
+  padding-left: 38px;
+  padding-right: 44px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.main__container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90px;
+}
+.top-title h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.22px;
+  margin-bottom: 7px;
+}
+.top-title h3 {
+  color: #16c098;
+  letter-spacing: -0.14px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 216px;
+  height: 38px;
+  margin-right: 53px;
+  border-radius: 10px;
+  background: #f9fbff;
+}
+.search-form img {
+  padding: 7px 8px;
+}
+input[type="text"] {
+  background: #f9fbff;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+}
+
+.main__container-table {
+  display: flex;
+  flex-direction: column;
+  height: 812px;
+  color: #292d32;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  gap: 48px;
+}
+.main__container-table_title {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 44px;
+  color: #b5b7c0;
+}
+.main__container-table_data {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 44px;
+}
+
+.main__container-slider {
+  display: flex;
+  width: 271px;
+  height: 24px;
+}
+h4 {
+  color: #b5b7c0;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+}
+.swiper {
+  width: 271px;
+  height: 24px;
+  color: #404b52;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.12px;
+}
+.swiper-slide {
+  display: inline-flex;
+  padding: 6px 9px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 25px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #404b52;
+}
+
+/* .line {
+  position: absolute;
+  left: 353px;
+  top: 255px;
+  width: 968px;
+  height: 1px;
+  background-color: #EEE;
+} */
+/* .swiper-container {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+
+.swiper-slide {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.swiper-slide.active {
+  background-color: #00f; /* Змініть колір на активній сторінці тут */
